@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrismIssue.SecondPage"
+             Title="SecondPage">
+		<Grid VerticalOptions="Fill">
+			<Image
+				Aspect="AspectFill"
+				Source="login" />
+			<BoxView
+				BackgroundColor="Black"
+				HeightRequest="160"
+				VerticalOptions="End" />
+			<Grid
+				Margin="16"
+				RowDefinitions="Auto, Auto, Auto"
+				RowSpacing="12"
+				VerticalOptions="End">
+				<Button
+					Grid.Row="0"
+					Text="Log in">
+				</Button>
+				<Button
+					Grid.Row="1"
+					Text="Sign up"
+					TextColor="AliceBlue">
+				</Button>
+				<Grid
+					Grid.Row="2"
+					Margin="0,12,0,12"
+					ColumnDefinitions="*,1,*"
+					ColumnSpacing="0"
+					RowDefinitions="Auto"
+					RowSpacing="0">
+					<Label
+						Grid.Column="0"
+						FontFamily="AvenirMedium"
+						FontSize="12"
+						HorizontalTextAlignment="Center"
+						LineBreakMode="TailTruncation"
+						Text="Some text 1"
+						TextColor="LightBlue"
+						VerticalTextAlignment="Center">
+					</Label>
+					<BoxView
+						Grid.Column="1"
+						Margin="0,4,0,0"
+						HeightRequest="12"
+						VerticalOptions="End"
+						WidthRequest="1"
+						Color="Silver" />
+					<Label
+						Grid.Column="2"
+						FontFamily="AvenirMedium"
+						FontSize="12"
+						HorizontalTextAlignment="Center"
+						LineBreakMode="TailTruncation"
+						Text="Some text 2"
+						TextColor="LightBlue"
+						VerticalTextAlignment="Center">
+					</Label>
+				</Grid>
+			</Grid>
+		</Grid>
+</ContentPage>
